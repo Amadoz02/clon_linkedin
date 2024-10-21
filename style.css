@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 .linkedin{
     display: flex;
@@ -16,7 +17,7 @@
     display: grid;
     grid-template-columns: 280px 1fr 280px;
     grid-template-rows: auto;
-    grid-template-areas: 'sidebar-left' 'main' 'sidebar-rigth';
+    grid-template-areas: "sidebar-left  main    sidebar-rigth";
     height: 100vh;
     gap: 15px;
     margin: 0 auto;

@@ -4,12 +4,20 @@
     position: fixed;
     padding: 0 15px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     z-index: 10;
     top: 0;
     left: 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     background-color: var(--color_blanco);
+}
+.img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    border: var(--gris_bordes);
+
 }
 
 .header__logo-search {
@@ -18,11 +26,12 @@
     align-items: center;
 }
 
-.img-logo {
+img.img-logo {
     display: block;
     width: 35px;
     height: 35px;
     margin-right: 15px;
+    border-radius: 0%;
 }
 
 .barra-search {
@@ -60,6 +69,7 @@
     display: flex;
     align-items: center;
     list-style: none;
+    gap: 10px;
 }
 
 .list__item {
@@ -91,6 +101,78 @@
 .icon-text {
     font-size: 0.8rem;
 }
-.perfil__icon> img{
+
+.navegate__perfil{
+    position: relative;
+}
+.ver-info-usuario{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.img--desplegable{
+    min-width: 45px;
+    min-height: 45px;
+}
+.link-perfil{
+    text-decoration: none;
+    color: var(--links);
+}
+input#desplegar-lista{
+    display: none;
+    
+}
+.perfil-menu{
+    visibility: hidden;
+    padding: 20px;
+    margin: 10px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    max-height: 0;
+    background-color: var(--gris_alto);
+    
+}
+input#desplegar-lista:checked + .perfil-menu{
+    display: block;
+    visibility: visible;
+    max-height: 400px;
+}
+.desplegable{
+    display: flex;
+    color: var(--color_blanco);
+    flex-direction: column;
+}
+.icono-desplegable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 35px;
+    min-height: 35px;
+    font-size: 1.3rem;
     border-radius: 50%;
+    margin: 0 15px 0 15px;
+    color: var(--gris_medio);
+    background-color: var(--color_blanco_oscuro);
+}
+.separador{
+    margin: 5px;
+
+    border: var(--gris_bordes);
+}
+.desplegable__menu-item{
+    display: flex;
+    justify-content: space-between;
+    font-size:14px;
+    text-decoration: none;
+    color: var(--color_blanco);
+    margin: 10px 0;
+    align-items: center;
+}
+.perfil-menu{
+    display: none;
+}
+.desplegable__menu-item>p{
+    width: 100%;
 }

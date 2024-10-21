@@ -4,8 +4,8 @@
     --color_negro: #000;
     --transicion: 0.5s;
     --gris_medio: #565656;
-    --gris_alto: #121212;
-    --gris_bordes: 1px solid rgba(255, 255, 255, 0.1);
+    --gris_alto: #141414d4;
+    --gris_bordes: 1px solid rgba(240, 240, 240, 0.764);
     --gris_sidebar: #212121;
     --scroll_color: #717171;
     --bordes-sidebar:12px;
@@ -15,6 +15,7 @@
     --fondo-contenido-galeria: #181818;
     --fondo-chips:#373737;
     --header-color:#def1ff;
+    --links:#75c3ff;
 }   
 ::-webkit-scrollbar{
     width: 7px;
